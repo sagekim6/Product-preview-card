@@ -89,6 +89,11 @@ html, body{
     justify-content: center;
   }
 
+  .item-info .add-to-cart-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transform: scale(1.1, 1.1);
+  }
+
   .item-info .add-to-cart-btn img{
     margin-right: 10px;
   }
