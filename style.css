@@ -42,7 +42,7 @@ html, body{
   }
 
   .item-img .bg-img{
-    background-image: url('./images/image-product-desktop.jpg');
+    background-image: url('img/image-product-desktop.jpg');
     border-radius: 8px 0 0 8px;
     background-size: cover;
     background-position: center;
@@ -133,7 +133,7 @@ html, body{
   }
 
   .item-img .bg-img{
-    background-image: url('./images/image-product-mobile.jpg');
+    background-image: url('img/image-product-mobile.jpg');
     border-radius: 8px 8px 0 0;
     background-size: cover;
     background-position: center;
