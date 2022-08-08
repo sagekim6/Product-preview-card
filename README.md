@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Github repository: [https://github.com/sagekim6/Product-preview-card.git](https://github.com/sagekim6/Product-preview-card.git)
-- Live Site URL:
+- Live Site URL: [https://sagekim6.github.io/Product-preview-card/](https://sagekim6.github.io/Product-preview-card/)
 
 ## My process
 
@@ -43,5 +43,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [https://sagekim6.github.io/Product-preview-card/](https://sagekim6.github.io/Product-preview-card/)
 - Frontend Mentor - [@sagekim6](https://www.frontendmentor.io/profile/sagekim6)
