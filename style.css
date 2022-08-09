@@ -30,15 +30,17 @@ html, body{
   box-sizing: border-box;
 }
 
-
+/* LARGE SCREEN */
 @media (max-width: 1440px){
+  /* body{
+    font-size: calc(20px + 0.00390625vw);
+  } */
+
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--white);
-    border-radius: 8px;
-    width: 630px;
-    height: 500px;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    height: 70%;
   }
 
   .item-img .bg-img{
@@ -52,6 +54,11 @@ html, body{
 
   .item-info{
     padding: 30px;
+    background-color: var(--white);
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .item-info .perfume{
@@ -91,7 +98,7 @@ html, body{
 
   .item-info .add-to-cart-btn:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    transform: scale(1.1, 1.1);
+    transform: scale(1, 1.1);
   }
 
   .item-info .add-to-cart-btn img{
@@ -101,14 +108,14 @@ html, body{
   .item-info .price{
     display: flex;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .item-info .price .sale-price{
     color: var(--dark-cyan);
     font-family: 'Fraunces', serif;
-    margin-right: 20px;
+    margin-right: 10%;
     font-size: 33px;
   }
 
@@ -118,12 +125,11 @@ html, body{
   }
 }
 
-@media (max-width: 375px){
+/* SMALL SCREEN */
+@media (max-width: 600px){
   .container {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
-    border-radius: 8px;
     width: 90%;
     height: 90%;
   }
@@ -135,15 +141,14 @@ html, body{
   .item-img .bg-img{
     background-image: url('img/image-product-mobile.jpg');
     border-radius: 8px 8px 0 0;
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
   }
 
   .item-info{
     height: 60%;
-    padding: 15px;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
   }
 
   .item-info .perfume{
@@ -151,7 +156,7 @@ html, body{
   }
 
   .item-info h1{
-    font-size: 25px;
+    font-size: 2.5rem;
     margin: 5px 0 5px 0;
   }
 
@@ -171,3 +176,21 @@ html, body{
     font-size: 13px;
   }
 }
+
+@media (max-width: 500px){
+  .item-info h1{
+    font-size: 2rem;
+  }
+
+  .item-info .price .sale-price{
+    font-size: 2rem;
+  }
+}
+
+/*
+1. image file and background color doesn't render
+2. min-value: 600px
+3. mobile design
+4. mobile first and then big screen
+
+*/
